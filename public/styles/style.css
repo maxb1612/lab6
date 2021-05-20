@@ -1,0 +1,329 @@
+@import "reset.css"; /* Скидання стилів браузеру за замовчуванням */
+@import "../libs/font-awesome/css/all.css";
+@import "../fonts/sansation_import.css"; /* Імпортуємо шрифт */
+@import "../libs/bootstrap-5.0.0-beta3-dist/css/bootstrap-grid.css";
+@import "adaptive.css";
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+body {
+    font-weight: normal;
+    font-family: 'Sansation', Arial, sans-serif;
+    background-color: #F4F2DC;
+
+}
+
+.wrapper {
+    max-width: 1420px;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    overflow: hidden;
+    background-color: #f2ca50;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header.top-header .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header.top-header .wrapper nav ul {
+    display: flex;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+header.top-header .wrapper nav li {
+    margin-left: auto;
+    margin-right: 40px
+}
+
+header.top-header .wrapper nav li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header.top-header .wrapper nav.left-nav {
+    display: flex;
+}
+
+header.top-header .wrapper nav.right-nav a.login-button {
+    color: #f2ca50;
+    background: #D91111;
+    border-radius: 16px;
+    padding: .53em 1.05em;
+}
+
+.fa-user{
+    margin-left: 10px;
+}
+
+header.top-header .wrapper nav.right-nav .fa-shopping-basket {
+    min-height: .53em;
+    border-radius: 100px;
+    background-color: #f4f2dc;
+    padding: .53em .53em;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    margin-top: 150px;
+    min-height: 100vh;
+}
+
+main.wrapper .specials {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.wrapper .content .specials {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrapper .specials img {
+    max-width: 690px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.content {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.container, .container-fluid {
+    padding-left: 0;
+    margin-left: 0;
+    max-width: 1390px;
+    width: 100%;
+}
+
+.item-box {
+    position: relative;
+    width: 330px;
+    height: 500px;
+    left: 0;
+    top: 0;
+    margin-top: 27px;
+    background: #F2CA50;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.item-box img {
+    max-width: 330px;
+}
+
+.item-box .item-box-text {
+    position: relative;
+    padding: 35px 25px 32px 25px;
+    height: 80px;
+}
+
+.item-box-text .item-description {
+    margin-top: 10px;
+}
+
+.item-box ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px 32px 25px;
+
+}
+
+.item-buy {
+    color: #f2ca50;
+    background: #D91111;
+    border-radius: 16px;
+    padding: .53em 1.05em;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    vertical-align: bottom;
+    width: 100%;
+    height: 100px;
+    background-color: #dedcc0;
+}
+
+
+
+.login-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 259px;
+    width: 559px;
+    height: 563px;
+    background: #F2CA50;
+    border-radius: 16px;
+}
+
+.login-box h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.login {
+    align-self: center;
+}
+
+.login-box form {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 410px;
+}
+
+.login-box form input, .signup-box form input {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 410px;
+    height: 54px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.login-box button, .signup-box button {
+    font-family: Sansation, Arial, serif;
+    border: none;
+    width: 226px;
+    height: 50px;
+    background-color: #D91111;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #F2CA50;
+}
+
+.signup-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 219px;
+    width: 559px;
+    height: 665px;
+    background: #F2CA50;
+    border-radius: 16px;
+}
+
+.signup-box h1 {
+    text-align: center;
+    padding-top: 115px;
+}
+
+.signup-box form {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 410px;
+}
+
+.cart h1 {
+    width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart-content{
+    margin: 25px;
+}
+
+.cart-item {
+    width: 885px;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #F2CA50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.cart-item h3 {
+    padding-top: 15px;
+}
+
+.cart-item form {
+    margin-left: 77%;
+    margin-top: 34px;
+}
+.cart-item form button {
+    background: none;
+    border: none;
+}
+
+.cart-item input {
+    width: 40px;
+    height: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 90px;
+}
+
+.order-button {
+    height: 50px;
+    width: 226px;
+    margin-left: 65%;
+    background: #D91111;
+    border-radius: 15px;
+}
+
+.order-button button {
+    border: none;
+    background: none;
+    font-family: Sansation, Arial, serif;
+    text-align: center;
+    padding-left: 58px;
+    padding-top: 10px;
+}
+
+
+
+.special {
+    display: flex;
+    margin-top: 25px;
+}
+
+.special-text {
+    margin-bottom: 25px;
+}
+
+
